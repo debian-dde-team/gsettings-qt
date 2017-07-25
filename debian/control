@@ -1,7 +1,9 @@
 Source: gsettings-qt
-Priority: extra
-Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
-Build-Depends: debhelper (>= 9),
+Priority: optional
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders:
+ Boyuan Yang <073plan@gmail.com>,
+Build-Depends: debhelper (>= 10~),
                pkg-config,
                libglib2.0-dev,
                qtchooser,
@@ -12,13 +14,14 @@ Build-Depends: debhelper (>= 9),
                qml-module-qttest,
                qml-module-qtquick2,
                xvfb,
-Standards-Version: 3.9.4
+               xauth,
+Standards-Version: 4.0.0
 Section: libs
 Homepage: https://launchpad.net/gsettings-qt
-# If you aren't a member of ~system-settings-touch but need to upload packaging 
-# changes, just go ahead. A member of ~system-settings-touch will notice and 
-# sync up the code again.
-Vcs-Bzr: https://code.launchpad.net/~system-settings-touch/gsettings-qt/trunk
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/gsettings-qt.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/gsettings-qt.git
+# Original Ubuntu upstream Bzr repository
+#Vcs-Bzr: https://code.launchpad.net/~system-settings-touch/gsettings-qt/trunk
 
 Package: qtdeclarative5-gsettings1.0
 Section: libs
@@ -28,7 +31,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          libgsettings-qt1 (= ${binary:Version}),
 Description: QML Bindings for GSettings
- Expose QML bindings for GSettings
+ This library provides QML bindings for GSettings.
  
 Package: libgsettings-qt1
 Section: libs
@@ -38,16 +41,15 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Library to access GSettings from Qt
- Library to access GSettings from Qt
+ This library can be used to access GSettings from Qt.
 
 Package: libgsettings-qt-dev
 Section: libdevel
 Architecture: any
-Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${misc:Depends},
          libgsettings-qt1 (= ${binary:Version}),
 Description: Library to access GSettings from Qt - devel
- Library to access GSettings from Qt
+ This library can be used to access GSettings from Qt.
  .
  This package contains the development files needed to build applications using
- the GSettings Qt library
+ the GSettings Qt library.

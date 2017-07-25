@@ -3,6 +3,10 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 export QT_SELECT=qt5
 
 # Skip tests on the archs they are known to be flaky
@@ -18,7 +22,8 @@ ifneq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(testskip_architectures)
 endif
 
 override_dh_makeshlibs:
+	# passed to dpkg-gensymbols
 	dh_makeshlibs -- -c4
 
 %:
-	dh $@ 
+	dh $@ --no-parallel

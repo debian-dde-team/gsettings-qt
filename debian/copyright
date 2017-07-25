@@ -3,7 +3,14 @@ Upstream-Name: gsettings-qt
 Source: https://launchpad.net/gsettings-qt
 
 Files: *
-Copyright: 2013 Canonical Ltd.
+Copyright: 2013-2017 Canonical Ltd.
+License: LGPL-3
+
+Files: debian/*
+Copyright: 2013-2017 Canonical Ltd.
+           2017 Boyuan Yang <073plan@gmail.com>
+License: LGPL-3
+
 License: LGPL-3
  This package is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public

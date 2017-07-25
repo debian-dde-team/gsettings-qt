@@ -1,3 +1,9 @@
+gsettings-qt (0.1+16.04+bzr20170110-1) unstable; urgency=medium
+
+  * Initial Release in Debian. (Closes: #888888) 
+
+ -- Boyuan Yang <073plan@gmail.com>  Tue, 25 Jul 2017 20:55:14 +0800
+
 gsettings-qt (0.1+16.04.20160329-0ubuntu3~1) zesty; urgency=medium
 
   * No change rebuild
