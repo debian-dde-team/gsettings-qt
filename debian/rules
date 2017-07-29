@@ -26,4 +26,4 @@ override_dh_makeshlibs:
 	dh_makeshlibs -- -c4
 
 %:
-	dh $@ --no-parallel
+	dh $@
