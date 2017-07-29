@@ -1,9 +1,9 @@
-gsettings-qt (0.1+16.04+bzr20170110-1) unstable; urgency=medium
+gsettings-qt (0.1+16.04.20170729-1) unstable; urgency=medium
 
   * Initial Release in Debian. (Closes: #870031)
   * Fix FTBFS problem due to incorrect link path. (LP: #1706682)
 
- -- Boyuan Yang <073plan@gmail.com>  Tue, 25 Jul 2017 20:55:14 +0800
+ -- Boyuan Yang <073plan@gmail.com>  Sat, 29 Jul 2017 12:09:04 +0800
 
 gsettings-qt (0.1+16.04.20160329-0ubuntu3~1) zesty; urgency=medium
 

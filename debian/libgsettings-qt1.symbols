@@ -1,5 +1,4 @@
-# SymbolsHelper-Confirmed: 0.1+16.04.20160329-0ubuntu2 amd64 arm64 armhf i386 ppc64el
-# Maintain symbol files: https://wiki.debian.org/UsingSymbolsFiles 
+# Maintain symbol files: https://wiki.debian.org/UsingSymbolsFiles
 libgsettings-qt.so.1 libgsettings-qt1 #MINVER#
  (c++)"QByteArray::~QByteArray()@Base" 0.1+14.04.20140408
  (c++)"QGSettings::QGSettings(QByteArray const&, QByteArray const&, QObject*)@Base" 0.1+14.04.20140408
@@ -27,11 +26,13 @@ libgsettings-qt.so.1 libgsettings-qt1 #MINVER#
  (c++)"QMapNode<QString, QVariant>::copy(QMapData<QString, QVariant>*) const@Base" 0.1+14.10.20140801.1
  (c++)"QMapNode<QString, QVariant>::destroySubTree()@Base" 0.1+14.10.20140801.1
  (c++)"QString::~QString()@Base" 0.1+14.04.20140408
- (c++)"QMap<QString, QVariant>::QMap(QMap<QString, QVariant> const&)@Base" 0.1+16.04+bzr20170110
- (c++)"QMap<QString, QVariant>::QMap(QMap<QString, QVariant> const&)@Base" 0.1+16.04+bzr20170110
- (c++)"QList<QString>::QList(QList<QString> const&)@Base" 0.1+16.04+bzr20170110
- (c++)"QList<QString>::QList(QList<QString> const&)@Base" 0.1+16.04+bzr20170110
- (optional=templinst)QMapData<QString, QVariant>::destroy()@Base 0.1+16.04.20160329-0ubuntu2
+ (c++)"QMap<QString, QVariant>::QMap(QMap<QString, QVariant> const&)@Base" 0.1+16.04.20170729
+ (c++)"QMap<QString, QVariant>::QMap(QMap<QString, QVariant> const&)@Base" 0.1+16.04.20170729
+ (c++)"QList<QString>::QList(QList<QString> const&)@Base" 0.1+16.04.20170729
+ (c++)"QList<QString>::QList(QList<QString> const&)@Base" 0.1+16.04.20170729
+# same names
+# (optional=templinst)"QMapData<QString, QVariant>::destroy()@Base" 0.1+16.04.20160329-0ubuntu2
+ _ZN8QMapDataI7QString8QVariantE7destroyEv@Base 0.1+16.04.20170729
  (c++)"qconf_types_collect_from_variant(_GVariantType const*, QVariant const&)@Base" 0.1+14.04.20140408
  (c++)"qconf_types_convert(_GVariantType const*)@Base" 0.1+14.04.20140408
  (c++)"qconf_types_to_qvariant(_GVariant*)@Base" 0.1+14.04.20140408
